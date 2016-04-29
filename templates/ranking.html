@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Pontos</th>
+      <th>Batalhas</th>
+      <th>Vitorias</th>
+      <th>Derrotas</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for entry in ranking -%}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ entry[0]|title }}</td>
+      <td>{{ entry[1] }}</td>
+      <td>{{ entry[2] }}</td>
+      <td>{{ entry[3] }}</td>
+      <td>{{ entry[4] }}</td>
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
