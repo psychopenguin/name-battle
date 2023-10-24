@@ -1,4 +1,4 @@
-Flask==1.0
+Flask==2.2.5
 Flask-Login==0.2.9
 Flask-Stormpath==0.4.1
 Flask-WTF==0.11
